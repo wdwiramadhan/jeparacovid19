@@ -1,7 +1,7 @@
-import Axios from "./Api"
+import jeparaApi from "./jeparaApi"
 
 const getSubdistricts = async() => {
-  return await Axios.get("/");
+  return await jeparaApi.get("dataKecamatan");
 }
 
 export {
