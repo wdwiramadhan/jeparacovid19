@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Header from "./components/Header"
+import Footer from "./components/Footer"
 import Container from './components/Container'
 import Subdistrics from './components/Subdistrics'
 import {getSubdistricts} from './services/JeparaServices'
@@ -25,6 +26,7 @@ function App() {
       <Header/>
       <Container>
         <div className="flex flex-col mx-auto max-w-2xl mt-3">
+          <div className="text-xl md:text-2xl font-bold text-gray-700">Jumlah Kasus Positif di Jepara</div>
           <div className="flex flex-col content-center sm:flex-row sm:space-x-4 space-y-2">
             <div className="w-full rounded-md shadow-md p-5 text-center mt-2 bg-white">
               <div className="text-orange-600 text-lg font-bold">{totalPositif}</div>
@@ -40,12 +42,13 @@ function App() {
             </div>
             <div className="w-full rounded-md shadow-md p-5 text-center bg-white">
               <div className="text-yellow-600 text-lg font-bold">{totalAll}</div>
-              <div className="text-gray-700">Total</div>
+              <div className="text-gray-700">Total Positif</div>
             </div>
           </div>
           <Subdistrics data={subdistricts}/> 
         </div>
       </Container>
+      <Footer/>
     </div>
   );
 }
