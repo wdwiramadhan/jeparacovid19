@@ -1,11 +1,17 @@
 module.exports = {
   purge: {
-    enabled: true,
     content: [
       "./src/**/**/*.js", 
       "./public/index.html"],
   },
-  theme: {},
+  theme: {
+    extend: {
+      screens: {
+        'dark': {'raw': '(prefers-color-scheme: dark)'},
+        // => @media (prefers-color-scheme: dark) { ... }
+      }
+    }
+  },
   variants: {},
   plugins: [],
 }
