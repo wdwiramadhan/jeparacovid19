@@ -36,7 +36,7 @@ const Index = () => {
               <div className="text-gray-700">Meninggal</div>
             </div>
             <div className="w-full rounded-md border p-5 text-center bg-white">
-              <div className="text-yellow-600 text-3xl font-bold">{totalAll}</div>
+              <div className="text-orange-600 text-3xl font-bold">{totalAll}</div>
               <div className="text-gray-700">Total Positif</div>
             </div>
           </div>
