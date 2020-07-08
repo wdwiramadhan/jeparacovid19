@@ -14343,6 +14343,14 @@ video {
   transition-delay: 1000ms;
 }
 
+.theme-light{
+  --bg-background-primary: white;
+}
+
+.theme-dark {
+  --bg-background-primary: #0D2438;
+}
+
 @media (min-width: 640px) {
   .sm\:space-y-0 > :not(template) ~ :not(template) {
     --space-y-reverse: 0;

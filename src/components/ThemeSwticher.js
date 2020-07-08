@@ -2,9 +2,12 @@ import React, { useState } from "react"
 
 const ThemeSwitcher = () => {
   const [dark,setDark] = useState(false)
+  const themeSwitcher =() => {
+    setDark(prev => !prev)
+  }
   return(
     <div>
-      <button className="text-gray-700 hover:text-gray-600 focus:outline-none"  onClick={() => dark ? setDark(false): setDark(true)}>
+      <button className="text-gray-700 hover:text-gray-600 focus:outline-none"  onClick={themeSwitcher}>
         {
           dark ? 
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-sun">

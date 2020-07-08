@@ -3,7 +3,7 @@ import React from "react"
 const Subdistrics = (props) => {
   const removeKec = name => name.split('').splice(5,1) + name.split('').splice(6).join('').toLowerCase()
   return (
-    <div className="mt-3 rounded-md shadow-md py-4 sm:px-5 px-3 bg-white">
+    <div className="mt-3 rounded-md border py-4 sm:px-5 px-3 bg-white">
       <table className="table-fixed w-full">
         <thead>
           <tr>

@@ -1,13 +1,14 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import ThemeSwitcher from "../components/ThemeSwticher" 
 
 const Header = () => {
   return (
-    <div className="mb-5 py-3 shadow-md px-5 bg-white">
+    <div className="mb-5 py-3 border-b px-3 bg-white">
       <div className="max-w-3xl mx-auto flex-row flex justify-between">
         <div className="text-xl font-bold text-gray-700 hover:text-gray-600 my-auto">
-              Jepara COVID-19
-          </div>
+          <Link to="/">Jepara COVID-19</Link>        
+        </div>
         <div className="my-auto text-gray-700"><ThemeSwitcher/></div>
       </div>
     </div>
