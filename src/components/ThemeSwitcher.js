@@ -7,7 +7,7 @@ const ThemeSwitcher = () => {
   }
   return(
     <div>
-      <button className="text-gray-700 hover:text-gray-600 focus:outline-none"  onClick={themeSwitcher}>
+      <button className="text-gray-700 hover:text-gray-600 focus:outline-none" aria-label="themeswitcher" onClick={themeSwitcher}>
         {
           dark ? 
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-sun">
