@@ -6,7 +6,7 @@ import {getSubdistricts} from '../services/JeparaServices'
 const Index = () => {
   const [subdistricts, setSubdistricts] = useState(null);  
   useEffect(() => {
-    getSubdistricts().then(res => setSubdistricts(res.data))
+    getSubdistricts().then(res => res.data.splice(0, 16)).then(res => setSubdistricts(res))
   },[])
   let totalPositif = 0;
   let totalRecover = 0;
@@ -20,7 +20,7 @@ const Index = () => {
   }
   return(
     <Container>
-        <div className="flex flex-col mx-auto max-w-2xl mt-3">
+        <div className="flex flex-col mx-auto max-w-2xl mt-3 ">
           <div className="text-xl md:text-2xl font-bold text-gray-700">Jumlah Kasus Positif di Jepara</div>
           <div className="flex flex-col content-center sm:flex-row sm:space-x-4 space-y-2">
             <div className="w-full rounded-md border p-5 text-center mt-2 bg-white">

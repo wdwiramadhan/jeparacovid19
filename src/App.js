@@ -6,7 +6,7 @@ import Index from "./pages/Index"
 
 function App() {
   return (
-    <div className="bg-white transition-colors duration-200">
+    <div className="bg-white dark-mode:bg-blue-900 transition-colors duration-200">
        <Router>
         <Header/> 
           <Switch>
